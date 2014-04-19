@@ -1,7 +1,7 @@
 FC-EVM
 =====
 
-implementation of Foreground Constrained Eulerian Video Magnification(FC-EVM);
+implementation of Foreground Constrained Eulerian Video Magnification(FC-EVM).
 
 ## Dependencies ##
 
