@@ -667,7 +667,7 @@ void MainWindow::on_actionLabeling_triggered()
         cv::Mat foreMask = extractor->getForegroundMask(firstFrame, selection);
         cv::Mat foreground = extractor->getForegroundWeighted(firstFrame, foreMask, 0.5);
         cv::rectangle(foreground, selection, cv::Scalar(0, 255, 0));
-        cv::putText(foreground, "Done selecting. Press any key to exit.", org4, CV_FONT_HERSHEY_COMPLEX, 0.5, cv::Scalar(255, 0, 0), 1, lineType);
+//        cv::putText(foreground, "Done selecting. Press any key to exit.", org4, CV_FONT_HERSHEY_COMPLEX, 0.5, cv::Scalar(255, 0, 0), 1, lineType);
         cv::imshow("Labeling Window", foreground);
         video->setROI(selection);
         magnifyDialog->enableCheck(true);

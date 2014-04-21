@@ -1039,7 +1039,6 @@ void VideoProcessor::motionMagnify()
                 cv::calcHist(&myroi, 1, 0, maskroi, hist, 1, &hsize, &phranges);
                 cv::normalize(hist, hist, 0, 255, CV_MINMAX);
 
-
                 histimg = cv::Scalar::all(0);
                 int binW = histimg.cols / hsize;
                 cv::Mat buf(1, hsize, CV_8UC3);
@@ -1102,6 +1101,7 @@ void VideoProcessor::motionMagnify()
 
                     roi.x = statePt.x;
                     roi.y = statePt.y;
+
                 }
             }
 
